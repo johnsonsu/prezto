@@ -35,11 +35,11 @@ alias resetlauncher='defaults write com.apple.dock ResetLaunchPad -bool true; ki
 # Git
 #
 alias gpm='git pull origin master'
-alias gs='git status'
-alias gfa='git fetch --all --prune'
 alias gpu='git push -u'
+alias gs='git status'
 alias gd='git diff'
-alias gl='git log'
+# alias gl='git log'
+alias gfa='git fetch --all --prune'
 alias gst='git stash --include-untracked'
 
 #
