@@ -28,18 +28,8 @@ BASE16_SHELL="$HOME/.config/base16-shell/"
     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
-
-# Android Development
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-
 # Reset MacOS launcher layout
 alias resetlauncher='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
-
 
 #
 # Git
@@ -52,22 +42,12 @@ alias gd='git diff'
 alias gl='git log'
 alias gst='git stash --include-untracked'
 
-
+#
 # Docker
+#
 alias dockerstopall='docker stop $(docker ps -a -q)'
 alias dockerrmall='docker rm $(docker ps -a -q)'
 alias dockercleanup='docker container prune && docker image prune'
 
-
-#
-# Java Switcher
-#
-export JAVA_8_HOME=`/usr/libexec/java_home -v 1.8`
-export JAVA_11_HOME=$(/usr/libexec/java_home -v11)
-export JAVA_17_HOME=$(/usr/libexec/java_home -v17)
-
-alias java8='export JAVA_HOME=$JAVA_8_HOME'
-alias java11='export JAVA_HOME=$JAVA_11_HOME'
-alias java17='export JAVA_HOME=$JAVA_17_HOME'
-
+# Load local profile
 source ~/.local_profile.zsh
