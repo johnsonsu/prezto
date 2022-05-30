@@ -23,10 +23,10 @@ fi
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Base16 Shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-    [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-        eval "$("$BASE16_SHELL/profile_helper.sh")"
+# BASE16_SHELL="$HOME/.config/base16-shell/"
+# [ -n "$PS1" ] && \
+#     [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+#         eval "$("$BASE16_SHELL/profile_helper.sh")"
 
 # Reset MacOS launcher layout
 alias resetlauncher='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
@@ -49,5 +49,14 @@ alias dockerstopall='docker stop $(docker ps -a -q)'
 alias dockerrmall='docker rm $(docker ps -a -q)'
 alias dockercleanup='docker container prune && docker image prune'
 
+# Use nvim by default
+alias vim="nvim"
+alias vi="nvim"
+
+# Zsh autocomplete suggestion color
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
+
 # Load local profile
 source ~/.local_profile.zsh
+
+
