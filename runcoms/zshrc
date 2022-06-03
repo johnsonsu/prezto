@@ -54,7 +54,7 @@ alias vim="nvim"
 alias vi="nvim"
 
 # Zsh autocomplete suggestion color
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
+# ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
 
 # Load local profile
 source ~/.local_profile.zsh
