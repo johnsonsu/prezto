@@ -50,6 +50,8 @@ alias dockercleanup='docker container prune && docker image prune'
 # Use nvim by default
 alias vim="nvim"
 alias vi="nvim"
+export VISUAL="/opt/homebrew/bin/nvim"
+export EDITOR="nvim"
 
 # Zsh autocomplete suggestion color
 # ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=242'
@@ -58,3 +60,4 @@ alias vi="nvim"
 source ~/.local_profile.zsh
 
 
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
