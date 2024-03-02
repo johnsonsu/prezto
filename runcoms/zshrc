@@ -55,3 +55,6 @@ export EDITOR="nvim"
 
 # Load local profile
 source ~/.local_profile.zsh
+
+# fzf binding and keymap
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
