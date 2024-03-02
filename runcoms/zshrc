@@ -22,9 +22,6 @@ fi
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Starship
-# eval "$(starship init zsh)"
-
 
 # Reset MacOS launcher layout
 alias resetlauncher='defaults write com.apple.dock ResetLaunchPad -bool true; killall Dock'
@@ -58,6 +55,3 @@ export EDITOR="nvim"
 
 # Load local profile
 source ~/.local_profile.zsh
-
-
-export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
