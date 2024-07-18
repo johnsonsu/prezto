@@ -56,5 +56,9 @@ export EDITOR="nvim"
 # fzf binding and keymap
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
+# Fix fzf-tab completion highlight: https://github.com/Aloxaf/fzf-tab/issues/24
+zstyle -d ':completion:*' format
+zstyle ':completion:*:descriptions' format '[%d]'
+
 # Load local profile
 source ~/.local_profile.zsh
