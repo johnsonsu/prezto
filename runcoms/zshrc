@@ -63,7 +63,7 @@ zstyle ':completion:*:descriptions' format '[%d]'
 # Load local profile
 source ~/.local_profile.zsh
 
-# n: node version manager 
+# n: node version manager
 export N_PREFIX=$HOME/.n
 export PATH=$N_PREFIX/bin:$PATH
 
