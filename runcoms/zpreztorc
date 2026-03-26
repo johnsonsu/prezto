@@ -27,6 +27,9 @@ zstyle ':prezto:*:*' color 'yes'
 # Set the Zsh functions to load (man zshcontrib).
 # zstyle ':prezto:load' zfunction 'zargs' 'zmv'
 
+# Skip git alias module
+zstyle ':prezto:module:git:alias' skip 'yes'
+
 # Set the Prezto modules to load (browse modules).
 # The order matters.
 zstyle ':prezto:load' pmodule \
@@ -43,7 +46,7 @@ zstyle ':prezto:load' pmodule \
   'fzf-tab' \
   'syntax-highlighting' \
   'history-substring-search' \
-  'autosuggestions' 
+  'autosuggestions'
 
 #
 # Autosuggestions
